@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Layout Shifter</title>
+  <style>
+
+    .container { display: flex; flex-wrap: wrap; width: 100%; }
+    .box { width: 100%; min-height: 150px;}
+    .dark_blue { background-color: darkblue; }
+    .light_blue { background-color: lightblue; }
+    .green { background-color: green; }
+    .red { background-color: red; }
+
+    @media screen and (min-width: 500px) {
+      .dark_blue { width: 50%; }
+      #container2 { width: 50%; }
+    }
+
+    @media screen and (min-width: 600px) {
+      .dark_blue { width: 25%; order: 1; }
+      #container2 { width: 50%; }
+      .red { width: 25%; order: -1 }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box dark_blue"></div>
+    <div id="container2" class="container">
+      <div class="box light_blue"></div>
+      <div class="box green"></div>
+    </div>
+    <div class="box red"></div>
+  </div>
+</body>
+</html>
