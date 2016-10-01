@@ -1,0 +1,21 @@
+/*
+ *
+ * Media Queries
+ *
+ */
+
+@media screen and (min-width: 760px) {
+  .hero { order: 1; }
+  .top-news { order: 2; width: 66.66%; }
+  .weather { order: 3; width: 33.33%; }
+  .recent-news { order: 4;}
+  .scores { order: 5;}
+}
+
+@media screen and (min-width: 1040px) {
+  .hero { order: 1; }
+  .top-news { order: 2; width: 100%; }
+  .scores { order: 3; width: 50%; }
+  .weather { order: 4; width: 50%; }
+  .recent-news { order: 5;}
+}
