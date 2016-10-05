@@ -12,27 +12,19 @@ module.exports = function(grunt) {
     responsive_images: {
       dev: {
         options: {
-          engine: 'im',
+          engine: 'gm',
           sizes: [{
-            /*
-            Change these:
-
-            width: ,
-            suffix: ,
-            quality:
-            */
+            width: '800px',
+            rename: false,
+            quality: 30,
           }]
         },
 
-        /*
-        You don't need to change this part if you don't change
-        the directory structure.
-        */
         files: [{
           expand: true,
           src: ['*.{gif,jpg,png}'],
           cwd: 'images_src/',
-          dest: 'images/'
+          dest: 'images/',
         }]
       }
     },
@@ -48,7 +40,7 @@ module.exports = function(grunt) {
     mkdir: {
       dev: {
         options: {
-          create: ['images']
+          create: ['images'],
         },
       },
     },
@@ -58,8 +50,9 @@ module.exports = function(grunt) {
       dev: {
         files: [{
           expand: true,
-          src: 'images_src/fixed/*.{gif,jpg,png}',
-          dest: 'images/'
+          cwd: 'images_src/',
+          src: 'fixed/*.{gif,jpg,png}',
+          dest: 'images/',
         }]
       },
     },
@@ -69,6 +62,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
+
   grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
 
 };
