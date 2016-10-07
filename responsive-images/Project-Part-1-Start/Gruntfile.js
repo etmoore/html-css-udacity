@@ -15,7 +15,9 @@ module.exports = function(grunt) {
           engine: 'gm',
           sizes: [{
             width: '800px',
-            rename: false,
+            quality: 30,
+          }, {
+            width: '400px',
             quality: 30,
           }]
         },
