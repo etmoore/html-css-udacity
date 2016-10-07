@@ -5,6 +5,7 @@ body {
 article {
   max-width: 50em;
   margin: 0 auto;
+  border-bottom: 1px solid gray;
 }
 
 h1, h2 {
