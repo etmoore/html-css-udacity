@@ -18,6 +18,7 @@
     <Title>My Responsive Blog: Picture Story</Title>
 
     <link href="https://fonts.googleapis.com/css?family=Oswald|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
     <link rel="stylesheet" href="css/main.css" />
 
   </head>
@@ -29,7 +30,11 @@
     <article>
 
       <figure>
-        <img src="images/still_life.jpg">
+        <picture>
+          <source srcset="images/still_life-400.jpg" media="(max-width: 400px)">
+          <source srcset="images/still_life-800.jpg 800w">
+          <img src="images/still_life-800.jpg" alt="still life">
+        </picture>
         <figcaption>Still Life</figcaption>
       </figure>
 
@@ -38,7 +43,11 @@
       <p>I love cheese, especially manchego swiss. ☺ Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.</p>
 
       <figure>
-        <img src="images/horses.jpg">
+        <picture>
+          <source srcset="images/horses-400.jpg" media="(max-width: 400px)">
+          <source srcset="images/horses-800.jpg 800w">
+          <img src="images/horses-800.jpg" alt="horses">
+        </picture>
         <figcaption>Horses</figcaption>
       </figure>
 
@@ -47,14 +56,22 @@
       <p>Manchego cheese strings hard cheese. Say cheese swiss cheese strings squirty cheese mozzarella feta the big cheese halloumi. Cheddar cheese and biscuits cut the cheese queso hard cheese red leicester parmesan st. agur blue cheese. Smelly cheese caerphilly hard cheese cream cheese cream cheese the big cheese feta squirty cheese. Babybel fromage edam lancashire.</p>
 
       <figure>
-        <img src="images/volt.jpg">
+        <picture>
+          <source srcset="images/volt-400.jpg" media="(max-width: 400px)">
+          <source srcset="images/volt-800.jpg 800w">
+          <img src="images/volt-800.jpg" alt="volt">
+        </picture>
         <figcaption>Volt</figcaption>
       </figure>
 
       <p>Edam parmesan smelly cheese. Dolcelatte say cheese cheesy feet lancashire cow boursin stinking bishop brie. Stilton cheese strings say cheese pecorino cheeseburger fromage frais cauliflower cheese manchego. St. agur blue cheese ricotta stinking bishop queso camembert de normandie manchego cheese triangles fondue. Gouda.</p>
 
       <figure>
-        <img src="images/cockatoos.jpg">
+        <picture>
+          <source srcset="images/cockatoos-400.jpg" media="(max-width: 400px)">
+          <source srcset="images/cockatoos-800.jpg 800w">
+          <img src="images/cockatoos-800.jpg" alt="cockatoos">
+        </picture>
         <figcaption>Cockatoos</figcaption>
       </figure>
 
@@ -67,28 +84,44 @@
       <p>St. agur blue cheese cheese and wine say cheese. Goat cottage cheese brie cheese triangles say cheese when the cheese comes out everybody's happy stinking bishop dolcelatte. Parmesan say cheese cream cheese goat cauliflower cheese st. agur blue cheese cheese slices hard cheese. Cheese triangles.</p>
 
       <figure>
-        <img src="images/postcard.jpg">
+        <picture>
+          <source srcset="images/postcard-400.jpg" media="(max-width: 400px)">
+          <source srcset="images/postcard-800.jpg 800w">
+          <img src="images/postcard-800.jpg" alt="postcard">
+        </picture>
         <figcaption>Postcard</figcaption>
       </figure>
 
       <p>Pecorino pepper jack cheesy feet. Smelly cheese cauliflower cheese fromage halloumi cream cheese who moved my cheese fromage fondue. Feta danish fontina cheesy grin mozzarella fromage cheesy grin airedale paneer. Cheddar halloumi cheese and biscuits jarlsberg cheese and biscuits cheese and biscuits squirty cheese.</p>
 
       <figure>
-        <img src="images/grasshopper.jpg">
+        <picture>
+          <source srcset="images/grasshopper-400.jpg" media="(max-width: 400px)">
+          <source srcset="images/grasshopper-800.jpg 800w">
+          <img src="images/grasshopper-800.jpg" alt="grasshopper">
+        </picture>
         <figcaption>Grasshopper</figcaption>
       </figure>
 
       <p>Babybel cream cheese cheese on toast. Brie fromage swiss cheese and biscuits hard cheese babybel bocconcini brie. Cheesy grin swiss cheese strings paneer lancashire cauliflower cheese cheese on toast caerphilly. Queso queso cheese and wine taleggio mascarpone cheeseburger.</p>
 
       <figure>
-        <img src="images/sfo.jpg">
+        <picture>
+          <source srcset="images/sfo-400.jpg" media="(max-width: 400px)">
+          <source srcset="images/sfo-800.jpg 800w">
+          <img src="images/sfo-800.jpg" alt="sfo">
+        </picture>
         <figcaption>SFO</figcaption>
       </figure>
 
       <p>Say cheese swiss cheesy grin. Cheese on toast queso bocconcini cheeseburger fondue manchego smelly cheese port-salut. Cream cheese cheese and wine airedale cheeseburger chalk and cheese cauliflower cheese fondue smelly cheese. Queso manchego.</p>
 
       <figure>
-        <img src="images/rosella.jpg">
+        <picture>
+          <source srcset="images/rosella-400.jpg" media="(max-width: 400px)">
+          <source srcset="images/rosella-800.jpg 800w">
+          <img src="images/rosella-800.jpg" alt="rosella">
+        </picture>
         <figcaption>Rosella</figcaption>
       </figure>
 
@@ -97,9 +130,15 @@
     </article>
 
     <footer>
-      <img src="images/fixed/flourish.png" class="flourish_img">
 
       <br>
+      <div id="social">
+        <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-twitter">Twitter</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/udacity/responsive-images" class="zocial-facebook">Facebook</a>
+        <a href="https://plus.google.com/share?url=https://github.com/udacity/responsive-images" class="zocial-googleplus">Google+</a>
+        <a href="http://digg.com/submit?phase=2&url=https%3A%2F%2Fgithub.com%2Fudacity%2Fresponsive-images&title=Udacity%20nano%20course%3A%20Responsive%20Images&bodytext=Responsive%20images%20for%20your%20sites%20and%20web%20apps&topic=tech_news" class="zocial-digg">Digg</a>
+      </div>
+
       <a href="//github.com/udacity/responsive-images/tree/master/project/start" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
     </footer>
 
